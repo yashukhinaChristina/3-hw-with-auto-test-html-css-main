@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1140px;
     padding: 0 150px;
 }
 
@@ -114,6 +114,9 @@ select:hover,
 
 .frameworks-list,
 .books-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
     /* 📍 Свойства flexbox для отступов между элементами в списках */
 }
 
@@ -126,6 +129,7 @@ select:hover,
 
 .skills-block {
     display: flex;
+    flex-direction: column-reverse;
        /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
 }
 
@@ -208,8 +212,10 @@ footer {
     font-size: 14px;
     color: #2965f1;
     text-decoration: none;
+    text-align: center;
 }
 
 .footer-link:hover {
+    text-decoration: blue;
     /* 📍 Стили для ссылки при наведении курсора */
 }
