@@ -95,6 +95,9 @@ select:hover,
     /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
 }
 
+.wrapper{
+    gap: 60px;
+}
 
 .info-wrapper {
     display: flex;
@@ -135,6 +138,7 @@ select:hover,
 
 .skills {
     min-width: 50%;
+    gap: 20px;
     /* 📍 Свойства flexbox для расположения элементов с классом .label */
 }
 
@@ -204,6 +208,8 @@ th, td {
 footer {
     background-color: rgba(163, 167, 255, 0.3);
     padding: 26px 0;
+    display: flex;;
+    justify-content: center;
     /* 📍 Свойство для расположения ссылки горизонтально по центру */
 }
 
@@ -212,7 +218,6 @@ footer {
     font-size: 14px;
     color: #2965f1;
     text-decoration: none;
-    text-align: center;
 }
 
 .footer-link:hover {
