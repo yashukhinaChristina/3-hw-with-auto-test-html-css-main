@@ -16,6 +16,11 @@ body {
     color: #303030;
 }
 
+.container {
+    max-width: 1100px;
+    padding: 0 150px;
+}
+
 header {
     background-color: #2965F1;
     padding: 23px 0;
@@ -31,14 +36,19 @@ header span {
     background-color: #fafaff;
     padding: 60px 0;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
     /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
 }
 
 .main-section .wrapper {
+    display: flex;
+    align-items:center;
     /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
 }
 
 .text-wrapper {
+    max-width: 425px;
     /* 📍 Cвойство для ограничения ширины блока с текстом в первой секции */
 }
 
@@ -63,6 +73,7 @@ header span {
 }
 
 .about-section .wrapper {
+    gap: 100px;
     /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
 }
 
@@ -86,6 +97,7 @@ select:hover,
 
 
 .info-wrapper {
+    display: flex;
     /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
 }
 
@@ -113,22 +125,29 @@ select:hover,
 }
 
 .skills-block {
-    /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
+    display: flex;
+       /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
 }
 
 .skills {
+    min-width: 50%;
     /* 📍 Свойства flexbox для расположения элементов с классом .label */
 }
+
 
 .books-list {
     font-weight: 400;
     font-size: 16px;
     padding-left: 20px;
+    min-width: 50%;
 }
 
 .label {
     font-weight: 400;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 form {
